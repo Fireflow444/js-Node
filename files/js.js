@@ -1,4 +1,22 @@
-	// alert boom practice
+ {
+ 	let click=0;
+document.querySelector("svg").addEventListener("click", function(){
+  // click=1;
+  document.getElementById("toggle").checked =
+  !document.getElementById("toggle").checked;
+if(click==0){
+document.querySelector(".menu-bar").style.left="0px";
+ click=1;
+}
+else{
+document.querySelector(".menu-bar").style.left="-300px";
+ click=0;
+}
+// click=1;
+});
+}
+
+function func(){	// alert boom practice
 	alert("you can use this web")
 	console.log("code running....")
 
@@ -34,3 +52,4 @@ else{
 // document.title=;
 }
 
+}

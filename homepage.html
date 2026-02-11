@@ -22,8 +22,13 @@
 
 <!-- menu icon -->
 <div class="menu-icon">
-	<img src="imgs/menu-line.png">
-	<img src="imgs/menu-line.png">
+
+<input type="checkbox" id="toggle">
+
+<svg viewBox="0 0 40 40" class="menu">
+  <rect class="line top" x="8" y="14" width="24" height="4" rx="2"/>
+  <rect class="line bottom" x="8" y="22" width="24" height="4" rx="2"/>
+</svg>
 </div>
 		</nav>
 
@@ -43,19 +48,19 @@
 <menu class="menu-bar">
 	<div class="main-menu-section">OPTIONS</div>
 	<ul>
-		<li class="menu-section">About me</li>
-		<li class="menu-section">Practice list</li>
-		<li class="menu-section">Learning sources</li>
-		<li class="menu-section">Tevta STD WEB</li>
+		<a href="#intro"><li class="menu-section">About me</li></a>
+		<a href="#pr-lt"><li class="menu-section">Practice list</li></a>
+		<a href="https://www.codewithharry.com/"><li class="menu-section">Learning sources</li></a>
+		<a href="https://fireflow444.github.io/Tevta-sallybus-portal/Homepage.html"><li class="menu-section">Tevta STD WEB</li></a>
 	</ul>
-	<div class="them-box">
+	<!-- <div class="them-box">
 		<label for="them" class="them-label">select your them</label>
 		<input type="color" id="them" class="them-color">
-	</div>
+	</div> -->
 </menu>
 
 <!-- intro section -->
-<section>
+<section id="intro">
 	<!-- heading box -->
 	<div class="heading-box">
 	<h1 class="intro-heading"><big>Hi<font>!</font></big><br>I am WEB DEV</h1>
@@ -69,7 +74,7 @@
 </section>
 
 <!-- practice link div -->
-<div class="pratice-main-cont">
+<div id="pr-lt" class="pratice-main-cont">
 	<!-- heading -->
 <h1 class="hd-pra">Practices</h1>
 <ul class="practice-link-list">
@@ -95,5 +100,6 @@
 
 
 		</div> <!-- sub body close  -->
+<script src="files/js.js"></script>
 </body>
 </html>

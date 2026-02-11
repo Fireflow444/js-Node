@@ -58,7 +58,32 @@ nav {
     width: 30px;
     margin-bottom: 5px;
 }
+/* hide checkbox */
+#toggle{
+  display:none;
+}
 
+.menu{
+  width:40px;
+  height:40px;
+  cursor:pointer;
+}
+
+/* lines */
+.line{
+  fill:#fff;
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+/* animation */
+#toggle:checked + svg .top{
+  transform: rotate(45deg) translateY(6px);
+}
+
+#toggle:checked + svg .bottom{
+  transform: rotate(-45deg) translateY(-6px);
+}
 /* Hero Section */
 .hero-section {
     overflow: hidden;
@@ -127,16 +152,23 @@ nav {
     left: 0;
 }
 
+
 .main-menu-section {
     font-size: 26px;
     font-weight: bold;
     margin-bottom: 30px;
     color: #fff;
 }
-
+.menu-bar a{
+    text-decoration: none;
+}
+.menu-bar li:hover{
+    background-color:rgba(225, 225, 225, 0.1);
+    
+}
 .menu-bar li {
     list-style: none;
-    padding: 15px 0;
+    padding: 15px 10px;
     font-size: 18px;
     border-bottom: 1px solid rgba(255,255,255,0.1);
     color: #fff;
