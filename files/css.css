@@ -229,9 +229,9 @@ big{
 .ft {
     display: flex;
     flex-flow: column;
-    gap:60px;
+    gap:100px;
     background-color: var(--footer-bg);
-    padding: 40px;
+    padding: 20px;
     text-align: center;
 }
 
